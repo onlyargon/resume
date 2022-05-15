@@ -1,0 +1,6 @@
+<div class="my-2">
+    <p class="font-semibold">{{detail.topic}}</p>
+    <p class="uppercase text-gray-600 text-sm">{{detail.timeframe}}</p>
+    <p class="my-2">{{detail.description}}</p>
+    <a class="text-blue-600" [href]="detail.externalLinks" *ngIf="detail.externalLinks != ''">Click here</a>
+</div>
