@@ -1,4 +1,4 @@
-<div class="a4 mx-auto bg-white h-auto drop-shadow-xl">
+<div class="a4 mx-auto bg-white h-auto drop-shadow-xl" id="content" #content>
     <div class="py-4">
         <app-header></app-header>
     </div>
@@ -16,17 +16,20 @@
             <section class="space-y-4">
                 <app-title [title]="'links'"></app-title>  
                 <section>
-                    <a href="https://stackoverflow.com/users/5346755/argon?tab=profile">Stackoverflow</a>                   
+                    <a class="text-sm" href="https://stackoverflow.com/users/5346755/argon?tab=profile"><span><i class="fa-brands fa-stack-overflow"></i></span> Stackoverflow</a>                   
+                </section>
+                <section>                    
+                    <a class="text-sm" href="https://github.com/onlyargon"><span><i class="fa-brands fa-github"></i></span> Github</a>               
                 </section>
                 <section>
-                    <a href="https://github.com/onlyargon">Github</a>               
+                    <a class="text-sm" href="https://medium.com/@argon.js"><span><i class="fa-brands fa-medium"></i></span> Medium</a>               
                 </section>
             </section>
         </div>
         <div class="h-auto space-y-8 basis-2/3">
             <section>
                 <app-title [title]="'profile'"></app-title>  
-                <p>To be a dynamic professional, working in a challenging environment that would enable
+                <p class="text-sm">To be a dynamic professional, working in a challenging environment that would enable
                     me to enhance my skills and abilities in my software development career.</p>
             </section>
             <section>
@@ -58,6 +61,10 @@
                 <app-title [title]="'references'"></app-title>  
                 <app-detail *ngFor="let ref of dataService.References" [detail]="ref"></app-detail>
             </section>
-        </div>
+        </div>        
     </div>
+    <app-footer></app-footer>
 </div>
+<!-- <div class="fixed bottom-0 left-1/4 right-1/4 bg-orange-400 w-auto mx-auto drop-shadow-xl text-center cursor-pointer" (click)="onDownload()">
+    <p class="text-sm font-semibold h-auto p-3"><span><i class="fa-solid fa-download"></i></span> Download</p>
+</div> -->
