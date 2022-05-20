@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
 
   @ViewChild('content', { static: false }) elem!: ElementRef;
 
-  constructor(public dataService: DataService) { }
+  constructor() { }
 
   ngOnInit(): void {
 

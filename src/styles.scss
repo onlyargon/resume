@@ -2,14 +2,44 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
-    --tw-bg-opacity: 1;
-    background-color: rgb(241 245 249 / var(--tw-bg-opacity));
     font-family: 'Poppins', sans-serif;
 }
 
-.a4{
+.body-light{
+    background-color: #EEEEEE !important;
+}
+
+.body-dark{
+    background-color: #263238 !important;
+}
+
+.cvCanvas {
     max-width: 950px !important;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    @apply mx-auto bg-white dark:bg-slate-800 h-auto drop-shadow-xl my-10;
+}
+
+.footer {
+    @apply text-center bg-slate-200 text-gray-600 dark:bg-slate-900 dark:text-gray-200 items-center py-8 text-xs;
+}
+
+.header {
+    @apply text-center bg-slate-200 text-gray-600 dark:bg-slate-900 dark:text-gray-200 items-center py-8 text-xs;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: lightgray;   
 }
