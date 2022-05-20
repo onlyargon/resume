@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { CvHeader } from '../models/cvHeader.model';
 import { Detail } from '../models/detail.model';
 import { Skill } from '../models/skill.model';
 
@@ -8,6 +9,13 @@ import { Skill } from '../models/skill.model';
 export class DataService {
 
   constructor() { }
+
+  HeaderDetails: CvHeader = {
+    name: "Aruna Wickramasinghe",
+    currentJobRole: "Senior Software Engineer",
+    email: "arunawickram@gmail.com",
+    phone: "+94 77 1603663"
+  };
 
   Skills: Skill[] = [
     { id: 1, name: 'Angular', level: '95' },
