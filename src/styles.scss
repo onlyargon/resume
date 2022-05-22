@@ -25,11 +25,11 @@ body {
 }
 
 .footer {
-    @apply text-center bg-slate-200 text-gray-600 dark:bg-slate-900 dark:text-gray-200 items-center py-8 text-xs;
+    @apply text-center bg-gray-300 text-gray-600 dark:bg-slate-900 dark:text-gray-200 items-center py-8 text-xs;
 }
 
 .header {
-    @apply text-center bg-slate-200 text-gray-600 dark:bg-slate-900 dark:text-gray-200 items-center py-8 text-xs;
+    @apply text-center bg-gray-300 text-gray-600 dark:bg-slate-900 dark:text-gray-200 items-center py-8 text-xs;
 }
 
 ::-webkit-scrollbar {

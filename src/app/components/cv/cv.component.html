@@ -1,70 +1,24 @@
-<div class="py-4">
-    <cv-header [headerDetails]="dataService.HeaderDetails"></cv-header>
-</div>
-<div class="flex sm:flex-row flex-col gap-12 py-8 px-16">
-    <div class="h-auto space-y-8 basis-1/3">
-        <section class="space-y-4">
-            <cv-title [title]="'skills'"></cv-title>
-            <app-skill *ngFor="let skill of dataService.Skills" [skill]="skill"></app-skill>
-        </section>
-        <section class="space-y-4">
-            <cv-title [title]="'languages'"></cv-title>
-            <app-skill *ngFor="let lang of dataService.Languages" [skill]="lang"></app-skill>
+<cv-header [headerDetails]="dataService.HeaderDetails"></cv-header>
+
+<div class="flex sm:flex-row flex-col sm:gap-12 gap-6 sm:py-8 py-4 sm:px-16 px-8">
+    <div class="h-auto sm:space-y-8 space-y-4 basis-1/3">
+        <section class="sm:space-y-4 space-y-2" *ngFor="let section of dataService.SkillSection">
+            <cv-title [title]="section.sectionName"></cv-title>
+            <app-skill *ngFor="let skill of section.details" [skill]="skill"></app-skill>
         </section>
 
-        <section class="space-y-4 flex flex-col">
+        <section class="sm:space-y-4 space-y-2 flex flex-col">
             <cv-title [title]="'links'"></cv-title>
-            <ng-container>
-                <a class="text-sm dark:text-white"
-                    href="https://stackoverflow.com/users/5346755/argon?tab=profile"><span><em
-                            class="fa-brands fa-stack-overflow"></em></span> Stackoverflow</a>
-            </ng-container>
-            <ng-container>
-                <a class="text-sm dark:text-white" href="https://github.com/onlyargon"><span><em
-                            class="fa-brands fa-github"></em></span> Github</a>
-            </ng-container>
-            <ng-container>
-                <a class="text-sm dark:text-white" href="https://medium.com/@argon.js"><span><em
-                            class="fa-brands fa-medium"></em></span> Medium</a>
+            <ng-container *ngFor="let link of dataService.CvLinks">
+                <a class="text-sm dark:text-white" target="_blank" [href]="link.link"><span><em class="fa-brands"
+                            [class]="link.icon"></em></span> {{link.linkName}}</a>
             </ng-container>
         </section>
     </div>
-    <div class="h-auto space-y-8 basis-2/3">
-        <ng-container>
-            <cv-title [title]="'profile'"></cv-title>
-            <p class="text-sm dark:text-gray-200">To be a dynamic professional, working in a challenging environment
-                that would enable
-                me to enhance my skills and abilities in my software development career.</p>
-        </ng-container>
-
-        <ng-container>
-            <cv-title [title]="'employment history'"></cv-title>
-            <app-detail *ngFor="let emp of dataService.Employments" [detail]="emp"></app-detail>
-        </ng-container>
-
-        <ng-container>
-            <cv-title [title]="'internships'"></cv-title>
-            <app-detail *ngFor="let intern of dataService.Internships" [detail]="intern"></app-detail>
-        </ng-container>
-
-        <ng-container>
-            <cv-title [title]="'education'"></cv-title>
-            <app-detail *ngFor="let edu of dataService.Education" [detail]="edu"></app-detail>
-        </ng-container>
-
-        <ng-container>
-            <cv-title [title]="'projects'"></cv-title>
-            <app-detail *ngFor="let proj of dataService.Projects" [detail]="proj"></app-detail>
-        </ng-container>
-
-        <ng-container>
-            <cv-title [title]="'research & publications'"></cv-title>
-            <app-detail *ngFor="let research of dataService.Research" [detail]="research"></app-detail>
-        </ng-container>
-
-        <ng-container>
-            <cv-title [title]="'references'"></cv-title>
-            <app-detail *ngFor="let ref of dataService.References" [detail]="ref"></app-detail>
+    <div class="h-auto sm:space-y-8 space-y-4 basis-2/3">
+        <ng-container *ngFor="let section of dataService.Sections">
+            <cv-title [title]="section.sectionName"></cv-title>
+            <app-detail *ngFor="let emp of section.details" [detail]="emp"></app-detail>
         </ng-container>
     </div>
 </div>
