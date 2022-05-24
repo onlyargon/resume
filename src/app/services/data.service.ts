@@ -103,14 +103,14 @@ export class DataService {
           id: 1,
           topic: 'Conxillium, Reppido',
           timeframe: 'MAY 2022 - PRESENT',
-          description: '',
+          description: 'Cloud based application for Netherland citizens to report the issue on public envirenment and local govenment will be handling the reports and take care about that. \n Technologies: Angular, Restful API',
           externalLinks: ''
         },
         {
           id: 1,
           topic: 'IDS Next FX Fortune Cloud',
           timeframe: 'DECEMBER 2019 - MAY 2022',
-          description: 'Cloud based ERP solution for the hospitality industry. \n Technologies: Angular 5, Restful API, C# .Net, MSSQL',
+          description: 'Cloud based ERP solution for the hospitality industry. \n Technologies: Angular, Restful API, C# .Net, MSSQL',
           externalLinks: ''
         },
         {
@@ -131,14 +131,14 @@ export class DataService {
           id: 2,
           topic: 'Zillione insurance broker system',
           timeframe: 'JULY 2018 - DECEMBER 2019',
-          description: 'Project description: Zillione insurance broker system is developed using Angular 5 and C# \n Client: George Steuart PVT. <br><br> Project status: Successfully implemented and under live operation.\n Technologies:Angular 5, Material Design Back-end: C# .Net, REST API DB: MSSQL',
+          description: 'Project description: Zillione insurance broker system is developed using Angular and C# \n Client: George Steuart PVT. <br><br> Project status: Successfully implemented and under live operation.\n Technologies:Angular, Material Design Back-end: C# .Net, REST API DB: MSSQL',
           externalLinks: ''
         },
         {
           id: 2,
           topic: 'UOC Online Payment System',
           timeframe: 'June 2018 - December 2019',
-          description: 'Project description: A system for the University of Colombo, to process their payments through the internet. It allows users to pay various types of payments. Its integrated with a Payment gateway which owns by a leading bank in Sri Lanka. \n Client: University of Colombo. \n Project status: Successfully implemented and under live operation. \n Technologies: technologies: Angular 5, Restful API Back-end technologies: C# .Net, MSSQL',
+          description: 'Project description: A system for the University of Colombo, to process their payments through the internet. It allows users to pay various types of payments. Its integrated with a Payment gateway which owns by a leading bank in Sri Lanka. \n Client: University of Colombo. \n Project status: Successfully implemented and under live operation. \n Technologies: technologies: Angular, Restful API Back-end technologies: C# .Net, MSSQL',
           externalLinks: ''
         }
       ]
