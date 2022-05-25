@@ -1,24 +1,7 @@
-<cv-header [headerDetails]="dataService.HeaderDetails"></cv-header>
+<ng-container *ngIf="uiService.template == 'kandy'">
+    <app-kandy></app-kandy>
+</ng-container>
 
-<div class="flex sm:flex-row flex-col sm:gap-12 gap-6 sm:py-8 py-4 sm:px-16 px-8">
-    <div class="h-auto sm:space-y-8 space-y-4 basis-1/3">
-        <section class="sm:space-y-4 space-y-2" *ngFor="let section of dataService.SkillSection">
-            <cv-title [title]="section.sectionName"></cv-title>
-            <app-skill *ngFor="let skill of section.details" [skill]="skill"></app-skill>
-        </section>
-
-        <section class="sm:space-y-4 space-y-2 flex flex-col">
-            <cv-title [title]="'links'"></cv-title>
-            <ng-container *ngFor="let link of dataService.CvLinks">
-                <a class="text-sm dark:text-white" target="_blank" [href]="link.link"><span><em class="fa-brands"
-                            [class]="link.icon"></em></span> {{link.linkName}}</a>
-            </ng-container>
-        </section>
-    </div>
-    <div class="h-auto sm:space-y-8 space-y-4 basis-2/3">
-        <ng-container *ngFor="let section of dataService.Sections">
-            <cv-title [title]="section.sectionName"></cv-title>
-            <app-detail *ngFor="let emp of section.details" [detail]="emp"></app-detail>
-        </ng-container>
-    </div>
-</div>
+<ng-container *ngIf="uiService.template == 'colombo'">
+    <app-colombo></app-colombo>
+</ng-container>

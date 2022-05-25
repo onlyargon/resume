@@ -11,6 +11,8 @@ export class UiService {
   //     const newColorScheme = event.matches ? "dark" : "light";
   // });
 
+  public template: string = 'kandy';
+
   onThemeChange() {
     this.isdark = !this.isdark;
   }

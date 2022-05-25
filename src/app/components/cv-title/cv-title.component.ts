@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { UiService } from 'src/app/services/ui.service';
 
 @Component({
   selector: 'cv-title',
@@ -9,7 +10,7 @@ export class CvTitleComponent implements OnInit {
 
   @Input() title = '';
 
-  constructor() { }
+  constructor(public uiService: UiService) { }
 
   ngOnInit(): void {
   }

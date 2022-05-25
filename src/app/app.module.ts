@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
-import { ProjectsComponent } from './pages/projects/projects.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SkillComponent } from './components/skill/skill.component';
 import { DetailComponent } from './components/detail/detail.component';
@@ -16,12 +15,15 @@ import { CvTitleComponent } from './components/cv-title/cv-title.component';
 import { CvHeaderComponent } from './components/cv-header/cv-header.component';
 import { CvComponent } from './components/cv/cv.component';
 import { NgToggleModule } from 'ng-toggle-button';
+import { KandyComponent } from './template/kandy/kandy.component';
+import { ColomboComponent } from './template/colombo/colombo.component';
+import { ChipComponent } from './components/chip/chip.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ProjectsComponent,
     HeaderComponent,
     SkillComponent,
     DetailComponent,
@@ -31,11 +33,16 @@ import { NgToggleModule } from 'ng-toggle-button';
     SwitchToggleComponent,
     CvTitleComponent,
     CvHeaderComponent,
-    CvComponent
+    CvComponent,
+    KandyComponent,
+    ColomboComponent,
+    ChipComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     NgToggleModule.forRoot()
   ],
   providers: [],

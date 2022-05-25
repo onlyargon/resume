@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/services/data.service';
+import { UiService } from 'src/app/services/ui.service';
 
 @Component({
   selector: 'app-cv',
@@ -8,7 +9,7 @@ import { DataService } from 'src/app/services/data.service';
 })
 export class CvComponent implements OnInit {
 
-  constructor(public dataService: DataService) { }
+  constructor(public uiService: UiService) { }
 
   ngOnInit(): void {
   }
