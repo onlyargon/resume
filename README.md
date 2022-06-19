@@ -30,6 +30,8 @@ If you have any **suggetions** or **PR** I'm happy to **merge**!!
 1. Change the `Section`, `SkillSection` and `CvLinks` objects according to you.
 1. Also you can change the **colors** as you like.
 1. Commit changes and use `github` pages for **static site hosting**
+1. If your resume turns out be so cool and you think you should share with the community make a **PR**
+   😉
 
 ---
 
