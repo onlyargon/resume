@@ -1,27 +1,38 @@
-# ArunaWickramasinghe
+## Resume creator
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+[Live Demo](https://onlyargon.github.io/resume/)
 
-## Development server
+# This is free to fork and create your own resume with it A start ⭐ would be appreciated.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+If you have any **suggetions** or **PR** I'm happy to **merge**!!
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Future plans!
 
-## Build
+> **You can always make a PR for below future feature plans and make this project more help to _non-coding_ community!**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- ~~Light / dark mode switch~~ Done!
+- ~~Multiple theme switch~~ Done!
+- Download as pdf
+- On page edit
+- Add more themes
+  - More PRs are welcome here ⚡
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## How to create your own resume with this
 
-## Running end-to-end tests
+1. Setup `angular` development envirenment
+1. `fork` the repository and `clone`
+1. Run >`npm install`
+1. Go to src > app > services and find `data.service.ts`
+1. Change the `Section`, `SkillSection` and `CvLinks` objects according to you.
+1. Also you can change the **colors** as you like.
+1. Commit changes and use `github` pages for **static site hosting**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+---
 
-## Further help
+## Again, Let's help non-coding community to make their life easier by developing above features!
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Cheers 🍻 !!! happy cording ✌
